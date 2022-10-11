@@ -10,6 +10,9 @@ def main():
     nickels = calculate_nickels(cents)
     cents = cents - nickels * 5
 
+    pennies = calculate_pennies(cents)
+    cents = cents - pennies * 1
+
 
 def read_cents():
     change = 0
@@ -47,6 +50,14 @@ def calculate_nickels(cents):
         nickel_coins += 1
         cents -= 5
     return nickel_coins
+
+
+def calculate_pennies(cents):
+    pennie_coins = 0
+    while cents >= 1:
+        pennie_coins += 1
+        cents -= 1
+    return pennie_coins
 
 
 main()
