@@ -13,6 +13,8 @@ def main():
     pennies = calculate_pennies(cents)
     cents = cents - pennies * 1
 
+    print(f'Coins: {quarters + dimes + nickels + pennies}')
+
 
 def read_cents():
     change = 0
