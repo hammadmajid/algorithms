@@ -62,4 +62,5 @@ def calculate_pennies(cents):
     return pennie_coins
 
 
-main()
+if __name__ == '__main__':
+    main()
