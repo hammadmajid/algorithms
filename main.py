@@ -13,7 +13,7 @@ def main():
     pennies = calculate_pennies(cents)
     cents = cents - pennies * 1
 
-    print(f'Coins: {quarters + dimes + nickels + pennies}')
+    print(f'Total Coin(s): {quarters + dimes + nickels + pennies}')
 
 
 def read_cents():
@@ -35,6 +35,7 @@ def calculate_quarters(cents):
     while cents >= 25:
         quarter_coins += 1
         cents -= 25
+    print(f'Quarter Coin(s): {quarter_coins}')
     return quarter_coins
 
 
@@ -43,6 +44,7 @@ def calculate_dimes(cents):
     while cents >= 10:
         dime_coins += 1
         cents -= 10
+    print(f'Dime Coin(s): {dime_coins}')
     return dime_coins
 
 
@@ -51,6 +53,7 @@ def calculate_nickels(cents):
     while cents >= 5:
         nickel_coins += 1
         cents -= 5
+    print(f'Nickel Coin(s): {nickel_coins}')
     return nickel_coins
 
 
@@ -59,6 +62,7 @@ def calculate_pennies(cents):
     while cents >= 1:
         pennie_coins += 1
         cents -= 1
+    print(f'Pennie Coin(s): {pennie_coins}')
     return pennie_coins
 
 
