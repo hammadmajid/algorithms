@@ -2,7 +2,7 @@
 
 A greedy algorithm is an approach for solving a problem by selecting the best option available at the moment. It doesn't worry whether the current best result will bring the overall optimal result.
 
-## Usage
+## Usage [deprecated]
 
 1. Download and Install the latest verison of [Python](https://www.python.org/downloads/) and [Git](https://git-scm.com/downloads)
 2. Open termianl and run the following commands:
