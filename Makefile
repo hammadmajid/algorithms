@@ -4,7 +4,7 @@ OUT_DIR = build
 
 compile:
 	# Compile the app
-	$(COMPILER) $(SRC_DIR)/main/app.cc -o $(OUT_DIR)/app.out
+	$(COMPILER) $(SRC_DIR)/app/app.cc -o $(OUT_DIR)/app.out
 
 test: 
 	# Compile tests
