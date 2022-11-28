@@ -3,6 +3,6 @@
 
 int main()
 {
-    int cents = greedy_algorithm::read_cents();
+    int cents = greedy_algorithm::get_cents();
     return 0;
 }

@@ -3,7 +3,7 @@
 
 namespace greedy_algorithm
 {
-    int read_cents();
+    int get_cents();
 }
 
 #endif
