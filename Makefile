@@ -15,4 +15,4 @@ test:
 
 run: 
 	# Run the app
-	$(OUT_DIR)/$(OUT)
+	$(OUT_DIR)/app.out
