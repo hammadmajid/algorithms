@@ -1,6 +1,6 @@
 #include <cassert>
 #include "../app/app.cc"
 
-int main() {
+int test_get_cents() {
     return 0;
 }

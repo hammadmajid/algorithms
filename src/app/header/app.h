@@ -3,7 +3,13 @@
 
 namespace greedy_algorithm
 {
-    int read_cents();
+    /**
+     * @brief Prompts the user to enter change (float) in dollars than
+     * Converts the given change to cents (integer)
+     * 
+     * @return Cents that were converted
+     */
+    int get_cents();
 }
 
 #endif
