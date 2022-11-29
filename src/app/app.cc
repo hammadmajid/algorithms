@@ -1,5 +1,8 @@
 #include <iostream>
 #include <math.h>
+#include <cctype>
+#include <algorithm>
+#include <string>
 #include "header/app.h"
 
 int main()
@@ -10,20 +13,24 @@ int main()
 
 int greedy_algorithm::get_cents()
 {
-    float change = 0;
+    std::string change;
 
-    while (true)
+    std::cout << "Change owed: ";
+
+    std::cin >> change;
+
+    // remove newline '\n' character the string
+    change.erase(std::remove(change.begin(), change.end(), '\n'), change.cend());
+
+    for (char eachChar : change)
     {
-        std::cout << std::endl
-                  << "Change owed: ";
-
-        std::cin >> change;
-
-        if (change > 0)
+        if (isdigit(eachChar) == false)
         {
-            break;
+            greedy_algorithm::get_cents();
         }
     }
 
-    return round(change * 100);
+    int cents = atoi(change.c_str());
+
+    return round(cents * 100);
 }
