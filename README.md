@@ -1,4 +1,4 @@
-[![Makefile CI](https://github.com/hammadmajid/greedy-algorithm/actions/workflows/makefile.yml/badge.svg)](https://github.com/hammadmajid/greedy-algorithm/actions/workflows/makefile.yml) [![GitHub Pages](https://github.com/hammadmajid/greedy-algorithm/actions/workflows/jekyll-gh-pages.yml/badge.svg)](https://github.com/hammadmajid/greedy-algorithm/actions/workflows/jekyll-gh-pages.yml)
+[![CircleCI](https://dl.circleci.com/status-badge/img/gh/hammadmajid/greedy-algorithm/tree/master.svg?style=svg)](https://dl.circleci.com/status-badge/redirect/gh/hammadmajid/greedy-algorithm/tree/master) [![Deploy to GitHub Pages](https://github.com/hammadmajid/greedy-algorithm/actions/workflows/jekyll-gh-pages.yml/badge.svg)](https://github.com/hammadmajid/greedy-algorithm/actions/workflows/jekyll-gh-pages.yml)
 
 # Greedy Algorithm
 
@@ -18,15 +18,19 @@ For instance, if some customer is owed 41¢, the biggest first (i.e., best immed
 ```bash
 $ git clone https://github.com/hammadmajid/greedy-algorithm
 ```
-2. Build the app 
+2. Change working directory
+```bash
+$ cd greedy-algorithm
+```
+3. Build the app 
 ```bash
 $ make # or make compile
 ```
-3. Test the app 
+4. Test the app 
 ```bash
 $ make test
 ```
-4. Run the app 
+5. Run the app 
 ```bash
 $ make run
 ```
