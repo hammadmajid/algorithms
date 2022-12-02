@@ -1,12 +1,12 @@
 # Description
 
-Please include a summary of the change and which issue is fixed. Please also include relevant motivation and context. List any dependencies that are required for this change.
+<!-- Please include a summary of the change and which issue is fixed. Please also include relevant motivation and context. List any dependencies that are required for this change. -->
 
-Fixes # (issue)
+Fixes # (issue) <!-- Delete this line if no issue if fixed -->
 
 ## Type of change
 
-Please delete options that are not relevant.
+<!-- Please delete options that are not relevant. -->
 
 - [ ] Bug fix (non-breaking change which fixes an issue)
 - [ ] New feature (non-breaking change which adds functionality)
@@ -15,11 +15,11 @@ Please delete options that are not relevant.
 
 ## Checklist
 
-- [ ] My code follows the style guidelines of this project
-- [ ] I have performed a self-review of my own code
-- [ ] I have commented my code, particularly in hard-to-understand areas
+<!-- Please check items that are relevent -->
+
+- [ ] My code follows the [style guidelines](https://google.github.io/styleguide/cppguide.html) of this project
+- [ ] I have commented my code in hard-to-understand areas
 - [ ] I have made corresponding changes to the documentation
-- [ ] My changes generate no new warnings
 - [ ] I have added tests that prove my fix is effective or that my feature works
 - [ ] New and existing unit tests pass locally with my changes
-- [ ] Any dependent changes have been merged and published in downstream modules
+- [ ] My Changes follows the [contributing guidlines](https://github.com/hammadmajid/greedy-algorithm/blob/master/CONTRIBUTING.md) for this repository
