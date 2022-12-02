@@ -1,9 +1,8 @@
-//It's safer if you include just the header than the implementation file,
-//With it implemented and compiled, the header is all that's needed
-#include "user.cc"
+#include "header/cents.cc"
 
 int main()
 {
-    int cents = greedy_algorithm::get_cents();
+    int cents = greedy_algorithm::algorithm::get_cents();
+    std::cout << cents << std::endl;
     return 0;
 }
