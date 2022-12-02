@@ -1,9 +1,8 @@
 version: 2.1
-    
+ 
 jobs:
   compile:
-    machine:
-      image: ubuntu-2004:202201-02
+    machine: true
     steps:
       - checkout
       - run: |
