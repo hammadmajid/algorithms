@@ -1,23 +1,15 @@
 version: 2.1
-executors:
-  my-custom-executor:
-    docker:
-      - image: ubuntu-2204:2022.10.2
-        auth:
-          # ensure you have first added these secrets
-          # visit app.circleci.com/settings/project/github/hammadmajid/greedy-algorithm/environment-variables
-          username: $DOCKER_HUB_USER
-          password: $DOCKER_HUB_PASSWORD
+    
 jobs:
-  make:
-
-    executor: my-custom-executor
+  compile:
+    machine:
+      image: ubuntu-2004:202201-02
     steps:
       - checkout
       - run: |
           make compile
 
 workflows:
-  my-custom-workflow:
+  compile-workflow:
     jobs:
-      - make
+      - compile
