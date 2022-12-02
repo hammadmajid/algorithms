@@ -1,15 +1,12 @@
 version: 2.1
 
-#dependencies:
-#    pre:
- #     - sudo apt-get update; sudo apt-get remove llvm-3.0; sudo apt-get install llvm-3.4 libclang1-3.4 llvm-3.4-dev
-
 jobs:
   dependencies:
     machine: true
     steps: 
       - run: |
-          sudo apt-get update; sudo apt-get remove llvm-3.0; sudo apt-get install llvm-3.4 libclang1-3.4 llvm-3.4-dev
+          sudo apt-get update # get updates
+          sudo bash -c "$(wget -O - https://apt.llvm.org/llvm.sh)" # install llmvn
       
   compile:
     machine: true
