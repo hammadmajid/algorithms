@@ -7,7 +7,7 @@
  class test
  {
      public:
-     static bool test_get_cents(float* input);
+     static bool test_get_cents(float input);
  };
 
 #endif //APP_TEST_H

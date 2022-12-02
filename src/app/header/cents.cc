@@ -10,7 +10,7 @@ int greedy_algorithm::algorithm::get_cents()
                   << "Change owed: ";
 
         std::cin >> change;
-        end = test::test_get_cents(&change);
+        end = test::test_get_cents(change);
 
     }
 

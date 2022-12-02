@@ -1,9 +1,9 @@
 #include "app_test.h"
 
-bool test_get_cents(float* input) {
+bool test_get_cents(float input) {
     assert(input != 0);
-
-    float change = *input;
+    assert(input < __FLT_MAX__);
+    assert(input > __FLT_MIN__);
 
         if(std::cin.fail())
             {
@@ -16,7 +16,7 @@ bool test_get_cents(float* input) {
                 return false;
             }
 
-        else if(change < 0)
+        else if(input < 0)
         {
             std::cout << "Do not enter a number less than 0." << std::endl;
             return false;
