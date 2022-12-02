@@ -1,6 +1,12 @@
 version: 2.1
  
 jobs:
+  setup-env:
+    machine: true
+    steps:
+      - run: |
+          sudo apt-get clang++
+
   compile:
     machine: true
     steps:
@@ -11,4 +17,5 @@ jobs:
 workflows:
   compile-workflow:
     jobs:
+      - setup-env
       - compile
