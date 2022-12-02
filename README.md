@@ -34,3 +34,14 @@ $ make test
 ```bash
 $ make run
 ```
+
+## Meta
+
+- [Inspiration](https://cs50.harvard.edu/x/2022/psets/1/cash/)
+- [MIT License](./LICENSE)
+- [Contribution Guideline](./CONTRIBUTIING.md)
+- [Discussion](https://github.com/hammadmajid/greedy-algorithm/discussions)
+
+
+---
+<sub>Created with ❤ by [Hammad Majid](https://github.com/hammadmajid)</sub>
