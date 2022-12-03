@@ -1,3 +1,10 @@
-remote_theme: pages-themes/cayman@v0.2.0 # uses Cayman theme
-title: Greedy Algorithm  # site title
-show_downloads: true # shows download button
+## GitHub Pages configuration
+
+# site title
+title: Algorithms
+
+# use Slate theme
+remote_theme: pages-themes/slate@v0.2.0
+
+# show download buttons
+show_downloads: true

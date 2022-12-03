@@ -6,7 +6,7 @@ In mathematics and computer science, an algorithm is a finite sequence of rigoro
 
 <sub>Read more at [wikipedia][wiki_link]</sub>
 
-## Setup Guide
+## Setup Guide [Deprecated]
 
 1. Clone the repository
 ```bash
