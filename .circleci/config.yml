@@ -1,12 +1,18 @@
 version: 2.1
 
-jobs:
+jobs: 
   echo-clang-version:
     machine: true
     steps:
       - checkout
       - run: |
           clang++ --version
+
+  install-dependencies:
+    machine: true
+    steps:
+      - run: |
+          sudo bash -c "$(wget -O - https://apt.llvm.org/llvm.sh)"
 
 #   dependencies:
 #     machine: true
@@ -26,4 +32,7 @@ jobs:
 workflows:
   compile-workflow:
     jobs:
-      - echo-clang-version
+      - install-dependencies
+      - echo-clang-version:
+          requires:
+                - install-dependencies
