@@ -1,15 +1,26 @@
 #include "input.h"
 
-int greedy_algorithm::get_cents()
+int input::change::get_cents()
 {
-    float change = 0;
+    std::string change;
 
-    while (true)
+    std::cout << "Change owed: ";
+
+    std::cin >> change;
+
+    // remove newline '\n' character from the input
+    change.erase(std::remove(change.begin(), change.end(), '\n'), change.cend());
+
+    for (auto &&each_char : change)
     {
-        std::cout << std::endl
-                  << "Change owed: ";
+        if (input::change::IsValidCharacter(each_char) == false)
+        {
+            input::change::get_cents();
+        }
+    }
 
-        std::cin >> change;
+    return input::change::ConvertToCents(change.c_str());
+}
 
         if(std::cin.fail())
         {
