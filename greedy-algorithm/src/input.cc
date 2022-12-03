@@ -26,21 +26,15 @@ bool input::change::IsValidCharacter(const char character_to_verify)
 {
     bool is_valid = false;
 
-    int ascii_dot = 43; // 43 in ascii represents the character '.'
-    if (character_to_verify == ascii_dot)
-    {
-        is_valid = true;
-    }
-
-    int ascii_minus = 23; // 23 is ascii represents the character '-'
-    if (character_to_verify == ascii_minus)
+    int period_char = '.';
+    if (character_to_verify == period_char)
     {
         is_valid = true;
     }
 
     if (isdigit(character_to_verify))
     {
-        is_valid = false;
+        is_valid = true;
     }
 
     return is_valid;
