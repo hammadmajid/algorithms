@@ -22,21 +22,32 @@ int input::change::get_cents()
     return input::change::ConvertToCents(change.c_str());
 }
 
-        if(std::cin.fail())
-        {
-            //Tells user that their input was incorrect, then clears the stream for 
-            //another attempt until user inputs correct information
-            std::cout << "You've enter an incorrect input" << std::endl;
+bool input::change::IsValidCharacter(const char character_to_verify)
+{
+    bool is_valid = false;
 
-            std::cin.clear();
-            std::cin.ignore(__INT_MAX__, '\n');
-        }
-
-        if (change > 0)
-        {
-            break;
-        }
+    int ascii_dot = 43; // 43 in ascii represents the character '.'
+    if (character_to_verify == ascii_dot)
+    {
+        is_valid = true;
     }
 
-    return std::round(change * 100);
+    int ascii_minus = 23; // 23 is ascii represents the character '-'
+    if (character_to_verify == ascii_minus)
+    {
+        is_valid = true;
+    }
+
+    if (isdigit(character_to_verify))
+    {
+        is_valid = false;
+    }
+
+    return is_valid;
+}
+
+int input::change::ConvertToCents(const char change[])
+{
+    float cents = std::atof(change);
+    return std::round(cents * 100);
 }
