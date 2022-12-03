@@ -1,6 +1,8 @@
 #ifndef APP_H
 #define APP_H
+
 #include <iostream>
+#include <math.h>
 
 namespace greedy_algorithm
 {

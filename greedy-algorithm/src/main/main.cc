@@ -1,4 +1,4 @@
-#include "user.cc"
+#include "input.cc"
 
 int main()
 {
