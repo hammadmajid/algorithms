@@ -2,12 +2,8 @@
 #define GREEDY_ALGORITHM_H
 
 #include <iostream>
-
-namespace greedy_algorithm
-{
-
-
-
-}
+#include <math.h>
+#include <algorithm>
+#include <string>
 
 #endif

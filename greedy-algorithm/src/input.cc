@@ -1,31 +1,47 @@
 #include "input.h"
 
-int greedy_algorithm::get_cents()
+int input::change::get_cents()
 {
-    float change = 0;
+    std::string change;
 
-    while (true)
+    std::cout << "Change owed: ";
+
+    std::cin >> change;
+
+    // remove newline '\n' character from the input
+    change.erase(std::remove(change.begin(), change.end(), '\n'), change.cend());
+
+    for (auto &&each_char : change)
     {
-        std::cout << std::endl
-                  << "Change owed: ";
-
-        std::cin >> change;
-
-        if(std::cin.fail())
+        if (input::change::IsValidCharacter(each_char) == false)
         {
-            //Tells user that their input was incorrect, then clears the stream for 
-            //another attempt until user inputs correct information
-            std::cout << "You've enter an incorrect input" << std::endl;
-
-            std::cin.clear();
-            std::cin.ignore(__INT_MAX__, '\n');
-        }
-
-        if (change > 0)
-        {
-            break;
+            input::change::get_cents();
         }
     }
 
-    return std::round(change * 100);
+    return input::change::ConvertToCents(change.c_str());
+}
+
+bool input::change::IsValidCharacter(const char character_to_verify)
+{
+    bool is_valid = false;
+
+    int period_char = '.';
+    if (character_to_verify == period_char)
+    {
+        is_valid = true;
+    }
+
+    if (isdigit(character_to_verify))
+    {
+        is_valid = true;
+    }
+
+    return is_valid;
+}
+
+int input::change::ConvertToCents(const char change[])
+{
+    float cents = std::atof(change);
+    return std::round(cents * 100);
 }
