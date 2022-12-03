@@ -1,7 +1,8 @@
-#include "../include/greedy-algorithm.h"
+#include "input.cc"
 
 int main()
 {
-    int cents = greedy_algorithm::get_cents();
+    int cents = input::change::get_cents();
+    std::cout << cents;
     return 0;
 }
