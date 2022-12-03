@@ -1,22 +1,15 @@
 version: 2.1
 
 jobs:
-  verify-env:
+  build:
     docker:
-      - image: gcc:latest
+      - image: silkeh/clang:latest
     steps:
       - checkout
       - run: |
-          gcc --version
-  
-  # compile:
-  #   machine: true
-  #   steps:
-  #     - checkout
-  #     - run: |
-  #         make compile
+          make compile
 
 workflows:
   compile-workflow:
     jobs:
-      - verify-env
+      - build
