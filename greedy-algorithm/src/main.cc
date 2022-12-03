@@ -1,4 +1,4 @@
-#include "user.cc"
+#include "../include/greedy-algorithm.h"
 
 int main()
 {

@@ -31,5 +31,5 @@
 *.out
 *.app
 
-# Out directory
-build
+# Bin directory
+bin

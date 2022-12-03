@@ -1,5 +1,4 @@
-#include <math.h>
-#include "header/app.h"
+#include "input.h"
 
 int greedy_algorithm::get_cents()
 {
@@ -28,5 +27,5 @@ int greedy_algorithm::get_cents()
         }
     }
 
-    return round(change * 100);
+    return std::round(change * 100);
 }
