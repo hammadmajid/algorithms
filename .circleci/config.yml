@@ -1,25 +1,14 @@
 version: 2.1
 
-jobs: 
-  echo-clang-version:
-    machine: true
+jobs:
+  verify-env:
+    docker:
+      - image: gcc:latest
     steps:
       - checkout
       - run: |
-          clang++ --version
-
-  install-dependencies:
-    machine: true
-    steps:
-      - run: |
-          sudo bash -c "$(wget -O - https://apt.llvm.org/llvm.sh)"
-
-#   dependencies:
-#     machine: true
-#     steps: 
-#       - run: |
-#           sudo apt-get update; sudo bash -c "$(wget -O - https://apt.llvm.org/llvm.sh)"
-      
+          gcc --version
+  
   # compile:
   #   machine: true
   #   steps:
@@ -27,12 +16,7 @@ jobs:
   #     - run: |
   #         make compile
 
-
-
 workflows:
   compile-workflow:
     jobs:
-      - install-dependencies
-      - echo-clang-version:
-          requires:
-                - install-dependencies
+      - verify-env
