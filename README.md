@@ -1,4 +1,4 @@
-[![CircleCI](https://dl.circleci.com/status-badge/img/gh/hammadmajid/greedy-algorithm/tree/master.svg?style=svg)](https://dl.circleci.com/status-badge/redirect/gh/hammadmajid/greedy-algorithm/tree/master) [![Deploy to GitHub Pages](https://github.com/hammadmajid/greedy-algorithm/actions/workflows/jekyll-gh-pages.yml/badge.svg)](https://github.com/hammadmajid/greedy-algorithm/actions/workflows/jekyll-gh-pages.yml)
+[![CircleCI](https://dl.circleci.com/status-badge/img/gh/hammadmajid/algorithms/tree/master.svg?style=svg)](https://dl.circleci.com/status-badge/redirect/gh/hammadmajid/algorithms/tree/master) [![Deploy to GitHub Pages](https://github.com/hammadmajid/greedy-algorithm/actions/workflows/jekyll-gh-pages.yml/badge.svg)](https://github.com/hammadmajid/greedy-algorithm/actions/workflows/jekyll-gh-pages.yml)
 
 # Algorithms
 
