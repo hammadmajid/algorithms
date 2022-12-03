@@ -1,1 +1,3 @@
-remote_theme: pages-themes/cayman@v0.2.0
+remote_theme: pages-themes/cayman@v0.2.0 # uses Cayman theme
+title: Greedy Algorithm  # site title
+show_downloads: true # shows download button

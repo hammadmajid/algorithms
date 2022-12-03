@@ -1,0 +1,15 @@
+version: 2.1
+
+jobs:
+  build:
+    docker:
+      - image: silkeh/clang:latest
+    steps:
+      - checkout
+      - run: |
+          make compile
+
+workflows:
+  compile-workflow:
+    jobs:
+      - build
