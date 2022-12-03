@@ -1,4 +1,4 @@
-#include "../include/input.h"
+#include "input.h"
 
 int greedy_algorithm::get_cents()
 {
