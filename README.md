@@ -32,7 +32,7 @@ $ make run
 ## Meta
 
 - [Code of Conduct][code_of_conduct_link]
-- [MIT License][license_link]
+- [License][license_link]
 - [Contribution Guideline][contributing_link]
 - [Discussion][discussion_link]
 - [Roadmap][roadmap_link]
