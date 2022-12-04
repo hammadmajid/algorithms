@@ -7,7 +7,7 @@ jobs:
     steps:
       - checkout
       - run: |
-          make compile
+          make
 
 workflows:
   compile-workflow:
