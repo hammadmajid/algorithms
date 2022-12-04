@@ -1,8 +1,15 @@
-#include "input.cc"
+#include "input.hh"
 
-int main()
+int main(int argc, char *argv[])
 {
-    int cents = input::change::get_cents();
-    std::cout << cents;
+    if (argc != 2)
+    {
+        Input::ExitProgram("Invalid number of arguments", 1);
+    }
+    else if (Input::IsPositiveRealNumber(argv[1]) == false)
+    {
+        Input::ExitProgram("Expected a positive real number", 2);
+    }
+
     return 0;
 }
