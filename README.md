@@ -32,7 +32,7 @@ $ make run
 ## Meta
 
 - [Code of Conduct][code_of_conduct_link]
-- [MIT License][license_link]
+- [License][license_link]
 - [Contribution Guideline][contributing_link]
 - [Discussion][discussion_link]
 - [Roadmap][roadmap_link]
@@ -44,7 +44,7 @@ $ make run
 
 [code_of_conduct_link]: ./CODE_OF_CONDUCT.md
 [license_link]: ./LICENSE
-[contributing_link]: ./CONTRIBUTIING.md
+[contributing_link]: ./CONTRIBUTING.md
 [discussion_link]: https://github.com/hammadmajid/greedy-algorithm/discussions
 [roadmap_link]: https://github.com/users/hammadmajid/projects/8
 [wiki_link]: https://en.wikipedia.org/wiki/Algorithm
