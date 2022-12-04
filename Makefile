@@ -1,2 +1,2 @@
 echo:
-  echo "TODO: Update build config"
+    echo "TODO: Update build config"
