@@ -6,7 +6,7 @@ Fixes # (issue) <!-- Delete this line if no issue if fixed -->
 
 ## Type of change
 
-<!-- Please delete options that are not relevant. -->
+<!-- Please select the options that are relevant. -->
 
 - [ ] Bug fix (non-breaking change which fixes an issue)
 - [ ] New feature (non-breaking change which adds functionality)
@@ -15,7 +15,7 @@ Fixes # (issue) <!-- Delete this line if no issue if fixed -->
 
 ## Checklist
 
-<!-- Please check items that are relevent -->
+<!-- First and last are manadotory -->
 
 - [ ] My code follows the [style guidelines](https://google.github.io/styleguide/cppguide.html) of this project
 - [ ] I have commented my code in hard-to-understand areas
