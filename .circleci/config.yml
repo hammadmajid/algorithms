@@ -7,7 +7,7 @@ jobs:
     steps:
       - checkout
       - run: |
-          make --version
+          make all
 
 workflows:
   compile-workflow:
