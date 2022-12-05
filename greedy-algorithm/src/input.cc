@@ -40,8 +40,9 @@ bool input::change::IsValidCharacter(const char character_to_verify)
     return is_valid;
 }
 
-int input::change::ConvertToCents(const char change[])
+void Input::ExitProgram(const char message[], int exit_code)
 {
-    float cents = std::atof(change);
-    return std::round(cents * 100);
+    std::cout << std::endl
+              << message << std::endl;
+    std::exit(exit_code);
 }
