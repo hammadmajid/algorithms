@@ -1,47 +1,31 @@
-#include "input.h"
+#include "input.hh"
+#include <iostream>
+#include <cctype>
+#include <math.h>
+#include <string.h>
 
-int input::change::get_cents()
+bool Input::IsPositiveRealNumber(const char flag[])
 {
-    std::string change;
-
-    std::cout << "Change owed: ";
-
-    std::cin >> change;
-
-    // remove newline '\n' character from the input
-    change.erase(std::remove(change.begin(), change.end(), '\n'), change.cend());
-
-    for (auto &&each_char : change)
+    int len = strlen(flag);
+    for (int i = 0; i < len; i++ )
     {
-        if (input::change::IsValidCharacter(each_char) == false)
+        if (!std::isdigit(flag[i]) || flag[i] != 46) // 46 in ASCII represents the dot(.) character
         {
-            input::change::get_cents();
+            return false;
         }
     }
 
-    return input::change::ConvertToCents(change.c_str());
+    return true;
 }
 
-bool input::change::IsValidCharacter(const char character_to_verify)
+int Input::ConvertInputToCents(const char change[])
 {
-    bool is_valid = false;
-
-    int period_char = '.';
-    if (character_to_verify == period_char)
-    {
-        is_valid = true;
-    }
-
-    if (isdigit(character_to_verify))
-    {
-        is_valid = true;
-    }
-
-    return is_valid;
+    return std::round(std::atof(change) * 100);
 }
 
-int input::change::ConvertToCents(const char change[])
+void Input::ExitProgram(const char message[], int exit_code)
 {
-    float cents = std::atof(change);
-    return std::round(cents * 100);
+    std::cout << std::endl
+              << message << std::endl;
+    std::exit(exit_code);
 }
