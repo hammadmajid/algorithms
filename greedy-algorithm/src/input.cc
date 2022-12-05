@@ -1,4 +1,4 @@
-#include "input.h"
+#include "input.hh"
 
 int input::change::get_cents()
 {
