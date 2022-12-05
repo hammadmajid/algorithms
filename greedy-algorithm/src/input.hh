@@ -12,7 +12,7 @@ public:
      * @param change
      * @return int
      */
-    static int ConvertInputToCents(float change);
+    static int ConvertInputToCents(const char change[]);
     /**
      * @brief Verifies that the supplied flag is positive real(ℝ) number
      *
