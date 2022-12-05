@@ -18,11 +18,10 @@ bool Input::IsPositiveRealNumber(const char flag[])
     return true;
 }
 
-// int Input::ConvertInputToCents(const char change[])
-// {
-//     float cents = std::atof(change);
-//     return std::round(cents * 100);
-// }
+int Input::ConvertInputToCents(const char change[])
+{
+    return std::round(std::atof(change) * 100);
+}
 
 void Input::ExitProgram(const char message[], int exit_code)
 {
