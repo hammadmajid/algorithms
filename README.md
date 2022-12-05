@@ -4,51 +4,53 @@
 
 In mathematics and computer science, an algorithm is a finite sequence of rigorous instructions, typically used to solve a class of specific problems or to perform a computation. Algorithms are used as specifications for performing calculations and data processing.
 
-<sub>Read more at [wikipedia][wiki_link]</sub>
+<sub>Read more at [wikipedia](https://en.wikipedia.org/wiki/Algorithm)</sub>
 
 ## Documentation
 
-Each algorithm directory consists of it's own `REAMDE.md` file which thoruoghly explains how to build, test and run the said algorithm. This documentation is also availiable on [GitHub Pages][pages_link].
-
+Each algorithm directory consists of it's own `README.md` file which thoroughly explains on how to build, test and run the said algorithm. This documentation is also available on [GitHub Pages][pages].
 
 ### Setup Guide
 
-To start experimenting you need setup your enivorment.
+#### Pre-requisites
 
-### Pre-requisites
+You need to have [GNU Make](https://www.gnu.org/software/make/) and [LLVM](https://releases.llvm.org/download.html) installed on your machine to continue.
 
-You need to have [GNU Make][make_link] and [LLVM][llvm_link] installed on your machine to contine.
+1. You can [download](pages) or clone the repository using Git
+
+```shell
+git https://github.com/hammadmajid/algorithms algorithms
+```
+
+2. Verify your setup [deprecated]
+
+```shell
+make verify # should output "Ready"
+```
 
 ## Meta
 
 ### License
 
-This repository is licensed under *AGPL-3.0 License*. You may copy, distribute, and modify it under the terms of the License contained in the file `LICENSE`.
+This repository is licensed under *AGPL-3.0 License*. You may copy, distribute, and modify it under the terms of the License contained in the file `LICENSE`. See the Open Source [Guide](https://opensource.guide/).
 
 ### Contributors
 
-- [Hammad Majid][author_link] (Maintainer)
 - [Happy Bird](https://github.com/HappyBirdisAXE)
 - [Maxim Smolskiy](https://github.com/MaximSmolskiy)
 
+### Contributors guidelines
+
+You can view the contributors guidelines [here](./CONTRIBUTING.md). Also, checkout this [guide](https://opensource.guide/how-to-contribute/).
+
 ### Links
 
-- [Code of Conduct][code_of_conduct_link]
-- [Contribution Guideline][contributing_link]
-- [License][license_link]
-- [Discussion][discussion_link]
-- [Roadmap][roadmap_link]
-
+- [Code of Conduct](./CODE_OF_CONDUCT.md)
+- [Discussions](https://github.com/hammadmajid/greedy-algorithm/discussions)
+- [Roadmap](https://github.com/users/hammadmajid/projects/8)
 
 ---
-<sub>Created with ❤ by [Hammad Majid][author_link]</sub>
+<sub>Created and maintained with ❤ by [Hammad Majid][author]</sub>
 
-
-[code_of_conduct_link]: ./CODE_OF_CONDUCT.md
-[license_link]: ./LICENSE
-[contributing_link]: ./CONTRIBUTING.md
-[discussion_link]: https://github.com/hammadmajid/greedy-algorithm/discussions
-[roadmap_link]: https://github.com/users/hammadmajid/projects/8
-[wiki_link]: https://en.wikipedia.org/wiki/Algorithm
-[pages_link]: https://hammadmajid.github.io/algorithms/
-[author_link]: https://github.com/hammadmajid
+[pages]: https://hammadmajid.github.io/algorithms/
+[author]: https://github.com/hammadmajid
