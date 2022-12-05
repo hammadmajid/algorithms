@@ -2,17 +2,18 @@
 #include <iostream>
 #include <cctype>
 #include <math.h>
-#include <stdlib.h>
+#include <string.h>
 
 bool Input::IsPositiveRealNumber(const char flag[])
 {
-    // for (auto &&each_char :
-    // {
-    //     if (!std::isdigit(each_char) || each_char != 46) // 46 in ASCII represents the dot(.) character
-    //     {
-    //         return false;
-    //     }
-    // }
+    int len = strlen(flag);
+    for (int i = 0; i < len; i++ )
+    {
+        if (!std::isdigit(flag[i]) || flag[i] != 46) // 46 in ASCII represents the dot(.) character
+        {
+            return false;
+        }
+    }
 
     return true;
 }
