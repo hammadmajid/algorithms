@@ -36,6 +36,7 @@ This repository is licensed under *AGPL-3.0 License*. You may copy, distribute, 
 
 ### Contributors
 
+- [Hammad Majid](https://github.com/hammadmajid) (Owner)
 - [Happy Bird](https://github.com/HappyBirdisAXE)
 - [Maxim Smolskiy](https://github.com/MaximSmolskiy)
 
