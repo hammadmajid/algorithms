@@ -9,7 +9,6 @@
 class Input
 {
 public:
-
     /**
      * @brief We are converting the input that was provided by user to cents
      * Input has type `char` because input was read from argv
