@@ -6,28 +6,37 @@ In mathematics and computer science, an algorithm is a finite sequence of rigoro
 
 <sub>Read more at [wikipedia][wiki_link]</sub>
 
-## Setup Guide [Deprecated]
+## Usage
 
-1. Clone the repository
+1. [Download][download_link] or clone the repository
 ```bash
-$ git clone https://github.com/hammadmajid/greedy-algorithm
+git clone https://github.com/hammadmajid/greedy-algorithm
 ```
-2. Change working directory
+2. Change working directory in terminal
 ```bash
-$ cd greedy-algorithm
+cd algorithms
 ```
-3. Build the app 
+3. Build all algorithms (optional)
 ```bash
-$ make # or make compile
+make # or make all
 ```
-4. Test the app 
-```bash
-$ make test
-```
-5. Run the app 
-```bash
-$ make run
-```
+4. Run algorithm
+
+    1. Change working directory to the algorithm you want to run
+    
+    ```bash
+    cd [algorithm-name] # cd ford-fulkerson-algorithm
+    ```
+    2. Build the algorithm
+    
+    ```bash
+    make compile
+    ```
+    3. Run the algorithm
+    
+    ```bash
+    $ make run
+    ```
 
 ## Meta
 
@@ -48,3 +57,4 @@ $ make run
 [discussion_link]: https://github.com/hammadmajid/greedy-algorithm/discussions
 [roadmap_link]: https://github.com/users/hammadmajid/projects/8
 [wiki_link]: https://en.wikipedia.org/wiki/Algorithm
+[download_link]: https://hammadmajid.github.io/algorithms/
