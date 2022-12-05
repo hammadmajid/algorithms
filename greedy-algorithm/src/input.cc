@@ -1,41 +1,21 @@
 #include "input.hh"
+#include <iostream>
+#include <cctype>
+#include <math.h>
+#include <stdlib.h>
 
-int input::change::get_cents()
+bool Input::IsPositiveRealNumber(const char flag[])
 {
-    std::string change;
+    // for (auto &&each_char :
+    // {
+    //     if (!std::isdigit(each_char) || each_char != 46) // 46 in ASCII represents the dot(.) character
+    //     {
+    //         return false;
+    //     }
+    // }
 
-    std::cout << "Change owed: ";
-
-    std::cin >> change;
-
-    // remove newline '\n' character from the input
-    change.erase(std::remove(change.begin(), change.end(), '\n'), change.cend());
-
-    for (auto &&each_char : change)
-    {
-        if (input::change::IsValidCharacter(each_char) == false)
-        {
-            input::change::get_cents();
-        }
-    }
-
-    return input::change::ConvertToCents(change.c_str());
+    return true;
 }
-
-bool input::change::IsValidCharacter(const char character_to_verify)
-{
-    bool is_valid = false;
-
-    int period_char = '.';
-    if (character_to_verify == period_char)
-    {
-        is_valid = true;
-    }
-
-    if (isdigit(character_to_verify))
-    {
-        is_valid = true;
-    }
 
     return is_valid;
 }
