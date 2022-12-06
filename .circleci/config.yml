@@ -1,7 +1,7 @@
 version: 2.1
 
 jobs:
-  build:
+  build-and-test:
     docker:
       - image: silkeh/clang:latest
     resource_class: small
@@ -15,4 +15,4 @@ jobs:
 workflows:
   compile-workflow:
     jobs:
-      - build
+      - build-and-test
