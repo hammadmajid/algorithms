@@ -1,0 +1,16 @@
+meta:
+  - ['*', '!.gitignore', '!Makefile']
+  - '/.github/**/*'
+  - '/.circleci'
+
+documentaion:
+ - '/**/*.md'
+
+greedy-algorithm:
+  - '/greedy-algorithm/**/*'
+
+ford-Fulkerson-algorithm:
+  - '/ford-Fulkerson-algorithm/**/*'
+
+# dijkstra's-algorithm:
+#  - '/dijkstra\'s-algorithm/**/*'
