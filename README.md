@@ -47,7 +47,8 @@ $ make run
 ```
 
 ## Join us in discussions
-We use GitHub Discussions to talk about all sorts of topics related to Algorithm. For example: if you'd like help troubleshooting a PR, have a great new idea, or want to share something amazing you've learned in our docs, join us in the [discussions](https://github.com/hammadmajid/algorithms/discussions).
+
+We use GitHub Discussions to talk about all sorts of topics related to Algorithms. For example: if you'd like help troubleshooting a PR, have a great new idea, or want to say *hi*, join us in the [discussions](https://github.com/hammadmajid/algorithms/discussions).
 
 ## Contributors guidelines
 
