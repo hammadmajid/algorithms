@@ -48,7 +48,9 @@ $ make run
 
 ## Contributors guidelines
 
-You can view the contributors guidelines [here](./CONTRIBUTING.md). Also, checkout this awesome Open Source [Guide](https://opensource.guide/how-to-contribute/).
+See the [contributing guide](https://github.com/hammadmajid/algorithms/blob/greedy-input-test/CONTRIBUTING.md) for detailed instructions on how to get started with this project. For more complex contributions, you can open an issue using the most appropriate [issue template](https://github.com/hammadmajid/algorithms/issues/new/choose) to describe the changes you'd like to see.
+
+If you're looking for a way to contribute, you can scan through our [existing issues](https://github.com/hammadmajid/algorithms/issues) for something to work on, also checkout thi Open-Source [Guide](https://opensource.guide/how-to-contribute/).
 
 ### Contributors
 
