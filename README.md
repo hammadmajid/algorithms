@@ -72,3 +72,7 @@ This repository is licensed under *AGPL-3.0 License*. You may copy, distribute, 
 
 [pages]: https://hammadmajid.github.io/algorithms/
 [author]: https://github.com/hammadmajid
+
+## Thanks 💜
+
+Thanks for all your contributions and efforts towards improving the Algorithms. We thank you for being part of the ✨ global open source community ✨!
