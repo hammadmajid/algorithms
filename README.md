@@ -12,9 +12,11 @@ Each algorithm directory consists of it's own `README.md`. Which thoroughly expl
 
 ### Code Documentation
 
-You can find the most of code documentation in header files `.hh`. If you don't understand something you can ask a question in [discussions](https://github.com/hammadmajid/algorithms/discussions);
+You can find the most of code documentation in header files `.hh`. If you don't understand something you can ask a question in [discussions](https://github.com/hammadmajid/algorithms/discussions).
 
 ## Setup Guide
+
+<!-- Use Docker, see issue #39 -->
 
 Install **pre-requisites**
 
@@ -25,11 +27,23 @@ Install **pre-requisites**
 ```bash
 $ git https://github.com/hammadmajid/algorithms algorithms
 ```
-2. Change working directory to algorithms, then to the algorithm you want to compile, test and run.
+2. Change working directory
 ```bash
-$ cd algorithms 
+$ cd algorithms
 # Change working directory to the algorithm you want to compile, test or run.
 $ cd [algorithm-name]
+```
+3. Compile algroithm
+```bash
+$ make compile # in the algorithm directory you want to compile
+```
+4. Test your changes
+```bash
+$ compile test # in the algorithm directory you want to test
+```
+5. Run the algrotihm
+```bash
+$ make run
 ```
 
 ## Contributors guidelines
