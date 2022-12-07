@@ -1,15 +1,15 @@
 meta:
+  - ['.github/**/*', '.circleci/*', '*'] #include
   - ['!.gitignore', '!Makefile', '!.markdownlint.jsonc'] # ignore
-  - ['/.github/**/*', '/.circleci/*', '*'] #include
 
 documentaion:
- - '/**/*.md'
+ - '**/*.md'
 
 greedy-algorithm:
-  - '/greedy-algorithm/**/*'
+  - 'greedy-algorithm/**/*'
 
 ford-Fulkerson-algorithm:
-  - '/ford-Fulkerson-algorithm/**/*'
+  - 'ford-fulkerson-algorithm/**/*'
 
 dijkstra's-algorithm:
  - |
