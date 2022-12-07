@@ -1,10 +1,6 @@
 ## GitHub Pages configuration
 
-# site title
-title: Algorithms
-
-# use Slate theme
-remote_theme: pages-themes/slate@v0.2.0
-
-# show download buttons
-show_downloads: true
+title: Algorithms # site title
+description: Implementaion of popular Algrotihms in C++ # site description
+remote_theme: pages-themes/slate@v0.2.0 # use slate theme
+show_downloads: true # show download buttons
