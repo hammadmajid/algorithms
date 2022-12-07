@@ -1,6 +1,6 @@
 meta:
   - ['!.gitignore', '!Makefile', '!.markdownlint.jsonc'] # ignore
-  - ['/.github/**/*', '/.circleci/*', '*.md'] #include
+  - ['/.github/**/*', '/.circleci/*', '*'] #include
 
 documentaion:
  - '/**/*.md'
