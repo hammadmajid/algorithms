@@ -46,6 +46,9 @@ $ compile test # in the algorithm directory you want to test
 $ make run
 ```
 
+## Join us in discussions
+We use GitHub Discussions to talk about all sorts of topics related to Algorithm. For example: if you'd like help troubleshooting a PR, have a great new idea, or want to share something amazing you've learned in our docs, join us in the [discussions](https://github.com/hammadmajid/algorithms/discussions).
+
 ## Contributors guidelines
 
 See the [contributing guide](https://github.com/hammadmajid/algorithms/blob/greedy-input-test/CONTRIBUTING.md) for detailed instructions on how to get started with this project. For more complex contributions, you can open an issue using the most appropriate [issue template](https://github.com/hammadmajid/algorithms/issues/new/choose) to describe the changes you'd like to see.
