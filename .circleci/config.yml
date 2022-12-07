@@ -1,15 +1,18 @@
 version: 2.1
 
 jobs:
-  build:
+  build-and-test:
     docker:
       - image: silkeh/clang:latest
+    resource_class: small
     steps:
       - checkout
+      - setup_remote_docker:
+          docker_layer_caching: true
       - run: |
           make all
 
 workflows:
   compile-workflow:
     jobs:
-      - build
+      - build-and-test

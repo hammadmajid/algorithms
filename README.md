@@ -1,4 +1,4 @@
-[![CircleCI](https://dl.circleci.com/status-badge/img/gh/hammadmajid/algorithms/tree/master.svg?style=svg)](https://dl.circleci.com/status-badge/redirect/gh/hammadmajid/algorithms/tree/master) [![Deploy to GitHub Pages](https://github.com/hammadmajid/greedy-algorithm/actions/workflows/jekyll-gh-pages.yml/badge.svg)](https://github.com/hammadmajid/greedy-algorithm/actions/workflows/jekyll-gh-pages.yml)
+[![CircleCI](https://dl.circleci.com/status-badge/img/gh/hammadmajid/algorithms/tree/master.svg?style=svg)](https://dl.circleci.com/status-badge/redirect/gh/hammadmajid/algorithms/tree/master) [![Deploy to GitHub Pages](https://github.com/hammadmajid/greedy-algorithm/actions/workflows/jekyll-gh-pages.yml/badge.svg)](https://github.com/hammadmajid/greedy-algorithm/actions/workflows/jekyll-gh-pages.yml) [![CodeQL](https://github.com/hammadmajid/algorithms/actions/workflows/codeql.yml/badge.svg?branch=master)](https://github.com/hammadmajid/algorithms/actions/workflows/codeql.yml)
 
 # Algorithms
 
@@ -8,50 +8,71 @@ In mathematics and computer science, an algorithm is a finite sequence of rigoro
 
 ## Documentation
 
-Each algorithm directory consists of it's own `README.md` file which thoroughly explains on how to build, test and run the said algorithm. This documentation is also available on [GitHub Pages][pages].
+Each algorithm directory consists of it's own `README.md`. Which thoroughly explains how the algorithm works, it's common use cases and on how to build, test and run the algorithm. This documentation is also available on [GitHub Pages][pages].
 
-### Setup Guide
+### Code Documentation
 
-#### Pre-requisites
+You can find the most of code documentation in header files `.hh`. If you don't understand something you can ask a question in [discussions](https://github.com/hammadmajid/algorithms/discussions).
 
-You need to have [GNU Make](https://www.gnu.org/software/make/) and [LLVM](https://releases.llvm.org/download.html) installed on your machine to continue.
+## Setup Guide
+
+<!-- Use Docker, see issue #39 -->
+
+Install **pre-requisites**
+
+- [GNU Make](https://www.gnu.org/software/make/)
+- [LLVM](https://releases.llvm.org/download.html)
 
 1. You can [download](pages) or clone the repository using Git
-
-```shell
-git https://github.com/hammadmajid/algorithms algorithms
+```bash
+$ git https://github.com/hammadmajid/algorithms algorithms
+```
+2. Change working directory
+```bash
+$ cd algorithms
+# Change working directory to the algorithm you want to compile, test or run.
+$ cd [algorithm-name]
+```
+3. Compile algroithm
+```bash
+$ make compile # in the algorithm directory you want to compile
+```
+4. Test your changes
+```bash
+$ compile test # in the algorithm directory you want to test
+```
+5. Run the algrotihm
+```bash
+$ make run
 ```
 
-2. Verify your setup [deprecated]
+## Join us in discussions
 
-```shell
-make verify # should output "Ready"
-```
+We use GitHub Discussions to talk about all sorts of topics related to Algorithms. For example: if you'd like help troubleshooting a PR, have a great new idea, or want to say *hi*, join us in the [discussions](https://github.com/hammadmajid/algorithms/discussions).
 
-## Meta
+## Contributors guidelines
 
-### License
+See the [contributing guide](https://github.com/hammadmajid/algorithms/blob/greedy-input-test/CONTRIBUTING.md) for detailed instructions on how to get started with this project. For more complex contributions, you can open an issue using the most appropriate [issue template](https://github.com/hammadmajid/algorithms/issues/new/choose) to describe the changes you'd like to see.
 
-This repository is licensed under *AGPL-3.0 License*. You may copy, distribute, and modify it under the terms of the License contained in the file `LICENSE`. See the Open Source [Guide](https://opensource.guide/).
+If you're looking for a way to contribute, you can scan through our [existing issues](https://github.com/hammadmajid/algorithms/issues) for something to work on, also checkout thi Open-Source [Guide](https://opensource.guide/how-to-contribute/).
 
 ### Contributors
 
-- [Hammad Majid](https://github.com/hammadmajid) (Owner)
+- [Hammad Majid][author] `Maintainer`
 - [Happy Bird](https://github.com/HappyBirdisAXE)
 - [Maxim Smolskiy](https://github.com/MaximSmolskiy)
 
-### Contributors guidelines
+## Code of Conduct
 
-You can view the contributors guidelines [here](./CONTRIBUTING.md). Also, checkout this [guide](https://opensource.guide/how-to-contribute/).
+This project has adopted the [Contributor Covenant Code of Conduct](https://github.com/hammadmajid/algorithms/blob/master/CODE_OF_CONDUCT.md). For any questions or comment you can contact [hm.hammadmajid@gmail.com](hm.hammadmajid@gmail.com).
 
-### Links
+## License
 
-- [Code of Conduct](./CODE_OF_CONDUCT.md)
-- [Discussions](https://github.com/hammadmajid/greedy-algorithm/discussions)
-- [Roadmap](https://github.com/users/hammadmajid/projects/8)
-
----
-<sub>Created and maintained with ❤ by [Hammad Majid][author]</sub>
+This repository is licensed under *AGPL-3.0 License*. You may copy, distribute, and modify it under the terms of the License contained in the file `LICENSE`.
 
 [pages]: https://hammadmajid.github.io/algorithms/
 [author]: https://github.com/hammadmajid
+
+## Thanks 💜
+
+Thanks for all your contributions and efforts towards improving the Algorithms. We thank you for being part of the ✨ global open source community ✨!

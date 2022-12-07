@@ -1,0 +1,16 @@
+meta:
+  - ['.github/**/*', '.circleci/*', '*'] #include
+  - ['!.gitignore', '!Makefile', '!.markdownlint.jsonc'] # ignore
+
+documentation:
+ - '**/*.md'
+
+greedy-algorithm:
+  - 'greedy-algorithm/**/*'
+
+ford-Fulkerson-algorithm:
+  - 'ford-fulkerson-algorithm/**/*'
+
+dijkstra's-algorithm:
+ - |
+      dijkstra's-algorithm/**/*'
