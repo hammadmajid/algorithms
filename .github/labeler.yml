@@ -1,16 +1,16 @@
 meta:
-  - ['*', '!.gitignore', '!Makefile']
-  - '/.github/**/*'
-  - '/.circleci'
+  - ['.github/**/*', '.circleci/*', '*'] #include
+  - ['!.gitignore', '!Makefile', '!.markdownlint.jsonc'] # ignore
 
-documentaion:
- - '/**/*.md'
+documentation:
+ - '**/*.md'
 
 greedy-algorithm:
-  - '/greedy-algorithm/**/*'
+  - 'greedy-algorithm/**/*'
 
 ford-Fulkerson-algorithm:
-  - '/ford-Fulkerson-algorithm/**/*'
+  - 'ford-fulkerson-algorithm/**/*'
 
-# dijkstra's-algorithm:
-#  - '/dijkstra\'s-algorithm/**/*'
+dijkstra's-algorithm:
+ - |
+      dijkstra's-algorithm/**/*'
