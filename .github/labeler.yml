@@ -2,7 +2,7 @@ meta:
   - ['.github/**/*', '.circleci/*', '*'] #include
   - ['!.gitignore', '!Makefile', '!.markdownlint.jsonc'] # ignore
 
-documentaion:
+documentation:
  - '**/*.md'
 
 greedy-algorithm:
