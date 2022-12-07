@@ -13,4 +13,4 @@ ford-Fulkerson-algorithm:
 
 dijkstra's-algorithm:
  - |
-      dijkstras-algorithm/**/*'
+      dijkstra's-algorithm/**/*'
