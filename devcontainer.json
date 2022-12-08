@@ -1,0 +1,4 @@
+{
+	"name": "Clang",
+	"image": "silkeh/clang:latest"
+}
