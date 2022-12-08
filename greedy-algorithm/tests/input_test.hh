@@ -1,8 +1,6 @@
 #ifndef INPUT_TEST_H
 #define INPUT_TEST_H
 
-#include "../src/input.hh"
-
 namespace input_test {
 
     /**
