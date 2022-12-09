@@ -5,10 +5,6 @@
     "MD033": false,
     // First line in a file should be a top-level heading
     "MD041": false,
-    // Lists should be surrounded by blank lines
-    "MD032": false,
     // Fenced code blocks should be surrounded by blank lines
     "MD031": false,
-    // Ordered list item prefix
-    "MD029": false
 }
